@@ -1,6 +1,4 @@
 using Microsoft.Maui.Graphics;
-using System.Drawing;
-using Color = Microsoft.Maui.Graphics.Color;
 
 namespace MauiApp2;
 
@@ -29,8 +27,8 @@ public partial class DynamicPage : ContentPage
         BtnUp = new Button()
         {
             Text = "Up",
-            HorizontalOptions = new LayoutOptions(LayoutAlignment.Center, false),
-            VerticalOptions = new LayoutOptions(LayoutAlignment.Center, false),
+            HorizontalOptions = LayoutOptions.Center,
+            VerticalOptions = LayoutOptions.Center,
             IsEnabled = false
         };
 
@@ -39,8 +37,8 @@ public partial class DynamicPage : ContentPage
         BtnDown = new Button()
         {
             Text = "Down",
-            HorizontalOptions = new LayoutOptions(LayoutAlignment.Center, false),
-            VerticalOptions = new LayoutOptions(LayoutAlignment.Center, false),
+            HorizontalOptions = LayoutOptions.Center, 
+            VerticalOptions = LayoutOptions.Center,
             IsEnabled = false
         };
         BtnDown.Clicked += BtnDown_Clicked;
@@ -48,16 +46,16 @@ public partial class DynamicPage : ContentPage
         TheImage = new Image()
         {
             HeightRequest = 200,
-            HorizontalOptions = new LayoutOptions(LayoutAlignment.Center, false),
-            VerticalOptions = new LayoutOptions(LayoutAlignment.Center, false)
+            HorizontalOptions = LayoutOptions.Center,
+            VerticalOptions = LayoutOptions.Center,
         };
 
         TheLabel = new Label()
         {
             FontSize = 20,
-            TextColor = new Color(0,0,1),
-            HorizontalOptions = new LayoutOptions(LayoutAlignment.Center, false),
-            VerticalOptions = new LayoutOptions(LayoutAlignment.Center, false)
+            TextColor = Colors.Blue,
+            HorizontalOptions = LayoutOptions.Center,
+            VerticalOptions = LayoutOptions.Center,
         };
 
         //Insert objects to page
